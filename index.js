@@ -24,6 +24,8 @@ function generatePrimes(quota) {
 
 document.querySelector("#generate").addEventListener("click", () => {
   const primes = generatePrimes(quota.value);
+  console.log("primes: ", primes);
+
   output.textContent = `Finished generating ${quota.value} primes!`;
 });
 

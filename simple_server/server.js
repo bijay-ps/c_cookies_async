@@ -5,7 +5,7 @@ const server = app();
 
 server.get("/users", (req, res) => {
   axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
-    console.log(response);
+    console.log(response.data);
     res.send(200);
   });
 });
